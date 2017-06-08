@@ -1,10 +1,11 @@
 {
   "name": "project-lvl1-s101",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "description": "Educational project at the hexlet.io 'Brain games'",
   "main": "",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "repository": {
     "type": "git",
