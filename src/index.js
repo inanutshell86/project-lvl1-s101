@@ -6,7 +6,8 @@ export const isEven = (num) => {
   }
   return 'no';
 };
-export const makeNumber = () => Math.floor(Math.random() * ((100 - 0) + 1));
+export const makeNumber = (min, max) =>
+ Math.round((Math.random() * (max - min)) + min);
 export const makeSign = () => randomstring.generate({
   length: 1,
   charset: '+-*',
