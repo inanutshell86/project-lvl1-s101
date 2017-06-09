@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import * as games from '..';
+import showBrainEven from '../games/even';
 
-games.showBrainEven();
+showBrainEven();
