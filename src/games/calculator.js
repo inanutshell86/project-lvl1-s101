@@ -1,4 +1,5 @@
-import { makeNumber, makeSign } from '..';
+import randomstring from 'randomstring';
+import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
 const desc = 'What is the result of the expression?';
@@ -18,6 +19,11 @@ const calc = (a, b, op) => {
       return NaN;
   }
 };
+
+const makeSign = () => randomstring.generate({
+  length: 1,
+  charset: '+-*',
+});
 
 const getGame = () => {
   const firstArgument = makeNumber(min, max);
