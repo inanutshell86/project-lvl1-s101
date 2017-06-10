@@ -1,10 +1,17 @@
-import { makeNumber, gcd } from '..';
+import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
 const desc = 'Find the greatest common divisor of given numbers.';
 
 const min = 1;
 const max = 100;
+
+const gcd = (num1, num2) => {
+  if (num2 === 0) {
+    return num1;
+  }
+  return gcd(num2, num1 % num2);
+};
 
 const getGame = () => {
   const firstDivisor = makeNumber(min, max);
