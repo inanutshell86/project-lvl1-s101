@@ -1,24 +1,22 @@
-import readlineSync from 'readline-sync';
-import { isEven, makeNumber } from '..';
+import startGame from '../game-engine';
+import makeNumber from '../make-number';
 
-const showBrainEven = () => {
-  console.log('Welcome to the Brain Games!\nAnswer "yes" if number even otherwise answer "no".\n');
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}!\n`);
-  let count = 0;
-  for (let i = 0; i < 3; i += 1) {
-    const gameQuestion = makeNumber();
-    console.log(`Question: ${gameQuestion}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (isEven(gameQuestion) === userAnswer) {
-      console.log('Correct!');
-      count += 1;
-    } else if (isEven(gameQuestion) !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${isEven(gameQuestion)}".\nLet's try again, ${userName}!`);
-    }
+const desc = 'Answer "yes" if number even otherwise answer "no"';
+
+const min = 1;
+const max = 100;
+
+const isEven = (num) => {
+  if (num % 2 === 0) {
+    return 'yes';
   }
-  if (count === 3) {
-    console.log(`Congratulations, ${userName}`);
-  }
+  return 'no';
 };
-export default showBrainEven;
+
+const getGame = () => {
+  const num = makeNumber(min, max);
+  const question = `${num}`;
+  const solution = isEven(num);
+  return { question, solution };
+};
+export default () => startGame(desc, getGame);
