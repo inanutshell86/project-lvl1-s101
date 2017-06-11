@@ -13,8 +13,11 @@ npm install -g project-lvl1-s101
 
 ```
 ## Balance a number
+
 $ brain-balance
+
 #### A balanced number is a number in which the smallest digit differs from the largest one by more than one.
+
 ## Calculate an expression
 $ brain-calc
 ## Determine whether the number is even
