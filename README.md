@@ -6,5 +6,16 @@
 ## Setup
 
 ```
-make install
+npm install -g project-lvl1-s101
+```
+
+## Play
+
+```
+$ brain-balance
+$ brain-calc
+$ brain-even
+$ brain-gcd
+$ brain-prime
+$ brain-progression
 ```
