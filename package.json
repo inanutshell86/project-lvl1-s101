@@ -1,6 +1,6 @@
 {
   "name": "project-lvl1-s101",
-  "version": "0.23.0",
+  "version": "0.24.0",
   "description": "Educational project at the hexlet.io 'Brain games'",
   "main": "",
   "bin": {
