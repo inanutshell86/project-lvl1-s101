@@ -1,7 +1,7 @@
 import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
-const desc = 'What number is missing in this progression?';
+const description = 'What number is missing in this progression?';
 
 const min = 10;
 const max = 70;
@@ -28,4 +28,4 @@ const getGame = () => {
   return { question, solution };
 };
 
-export default () => startGame(desc, getGame);
+export default () => startGame(description, getGame);
