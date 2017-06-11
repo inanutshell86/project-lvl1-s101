@@ -20,9 +20,9 @@ const playRound = (getGame, count = 0) => {
   return playRound(getGame, count + 1);
 };
 
-const startGame = (desc, getGame) => {
+const startGame = (description, getGame) => {
   console.log('Welcome to the Brain Games!');
-  console.log(`${desc}\n`);
+  console.log(`${description}\n`);
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!\n`);
   if (playRound(getGame)) {
