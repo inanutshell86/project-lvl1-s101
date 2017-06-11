@@ -1,7 +1,7 @@
 import startGame from '../game-engine';
 import makeNumber from '../make-number';
 
-const desc = 'Answer "yes" if number prime otherwise answer "no"';
+const description = 'Answer "yes" if number prime otherwise answer "no"';
 
 const min = 1;
 const max = 100;
@@ -25,4 +25,4 @@ const getGame = () => {
   return { question, solution };
 };
 
-export default () => startGame(desc, getGame);
+export default () => startGame(description, getGame);
