@@ -9,9 +9,8 @@
 npm install -g project-lvl1-s101
 ```
 
-## Play
-```
 ### Determine whether the number is even
+```
 $ brain-even
 ```
 
@@ -27,7 +26,7 @@ $ brain-calc
 $ brain-gcd
 ```
 
-### Balance a number(A balanced number is a number in which the smallest digit differs from the largest one by more than one.)
+### Balance a number (A balanced number is a number in which the smallest digit differs from the largest one by more than one.)
 ```
 $ brain-balance
 ```
