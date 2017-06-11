@@ -1,7 +1,7 @@
 import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
-const desc = 'Balance the given number.';
+const description = 'Balance the given number.';
 
 const min = 100;
 const max = 10000;
@@ -35,4 +35,4 @@ const getGame = () => {
   return { question, solution };
 };
 
-export default () => startGame(desc, getGame);
+export default () => startGame(description, getGame);
