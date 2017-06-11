@@ -1,7 +1,7 @@
 import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
-const desc = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const min = 1;
 const max = 100;
@@ -21,4 +21,4 @@ const getGame = () => {
   return { question, solution };
 };
 
-export default () => startGame(desc, getGame);
+export default () => startGame(description, getGame);
