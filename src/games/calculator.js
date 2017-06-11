@@ -2,7 +2,7 @@ import randomstring from 'randomstring';
 import makeNumber from '../make-number';
 import startGame from '../game-engine';
 
-const desc = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const min = 1;
 const max = 100;
@@ -34,4 +34,4 @@ const getGame = () => {
   return { question, solution };
 };
 
-export default () => startGame(desc, getGame);
+export default () => startGame(description, getGame);
